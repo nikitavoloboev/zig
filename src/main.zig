@@ -1,7 +1,8 @@
 const std = @import("std");
 
 pub fn main() !void {
-    try init_starter();
+    // try init_starter();
+    try learning_zig();
 }
 
 fn learning_zig() !void {

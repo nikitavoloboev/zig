@@ -11,10 +11,8 @@ Assumes [zig](https://ziglang.org/learn/getting-started/) is installed.
 ## Run
 
 ```
-bun dev
+bun watch
 ```
-
-Runs: `zig build run`
 
 ## Contribute
 

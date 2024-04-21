@@ -1,8 +1,17 @@
 {
   "scripts": {
-    "dev": "zig build run"
+    "dev": "zig build run",
+    "watch": "bun cmd.ts run"
   },
   "prettier": {
     "semi": false
+  },
+  "type": "module",
+  "dependencies": {
+    "watcher": "^2.3.1",
+    "bun": "^1.1.4"
+  },
+  "devDependencies": {
+    "bun-types": "^1.1.4"
   }
 }

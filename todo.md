@@ -1,0 +1,1 @@
+- try some basic zig programs and especially understand comptime

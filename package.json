@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "zig build run"
+  },
+  "prettier": {
+    "semi": false
+  }
+}

@@ -7,3 +7,4 @@ node_modules
 # other
 zig-cache
 zig-out
+lib/zig-utils

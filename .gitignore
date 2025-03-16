@@ -22,3 +22,6 @@ past-*
 *.bike
 *.db
 .repo_ignore
+x/
+
+.zig-cache

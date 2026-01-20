@@ -1,15 +1,13 @@
 # Zig
 
-## Flow
+## Dev 
 
-> CLI to do things fast
+With [flow](https://github.com/nikivdev/flow), run `f setup`, then `f` will search through list of tasks.
 
-See [cli/flow](cli/flow).
+There are CLIs here, running `f deploy-<cli>` will compile and put new version of them into your path.
 
 ## Contributing
 
-Any PR to improve is welcome. [codex](https://github.com/openai/codex) & [cursor](https://cursor.com) are nice for dev. Great **working** & **useful** patches are most appreciated (ideally).
+[Use AI](https://nikiv.dev/how-i-code) & [flow](https://github.com/nikivdev/flow). All meaningful issues and PRs will be merged in. Thank you.
 
-### 🖤
-
-[![Discord](https://go.nikiv.dev/badge-discord)](https://go.nikiv.dev/discord) [![X](https://go.nikiv.dev/badge-x)](https://x.com/nikitavoloboev) [![nikiv.dev](https://go.nikiv.dev/badge-nikiv)](https://nikiv.dev)
+[![Discord](https://go.nikiv.dev/badge-discord)](https://go.nikiv.dev/discord) [![X](https://go.nikiv.dev/badge-x)](https://x.com/nikivdev) [![nikiv.dev](https://go.nikiv.dev/badge-nikiv)](https://nikiv.dev)

@@ -1,0 +1,54 @@
+version = 1
+
+[[tasks]]
+name = "setup"
+command = """
+set -euo pipefail
+if ! command -v zig >/dev/null 2>&1; then
+  echo "Zig toolchain 'zig' not found in PATH."
+  echo "Get latest zig using https://github.com/weezy20/zv"
+  exit 1
+fi
+zig version >/dev/null
+echo "✔️ you are setup"
+"""
+description = "Ensure Zig is available"
+shortcuts = ["s"]
+
+[[tasks]]
+name = "flow"
+command = """
+set -euo pipefail
+if [ -n "${FLOW_ARGS:-}" ]; then
+  zig build flow -- $FLOW_ARGS
+else
+  zig build flow
+fi
+"""
+description = "Run the Flow Zig CLI (passes CLI args through)"
+shortcuts = ["f"]
+
+[[tasks]]
+name = "dev"
+command = "flow flow -- $FLOW_ARGS"
+description = "Alias for flow task"
+shortcuts = ["d"]
+
+[[tasks]]
+name = "run"
+command = "flow flow -- $FLOW_ARGS"
+description = "Alias for flow task"
+shortcuts = ["r"]
+
+[[tasks]]
+name = "deploy"
+command = """
+set -euo pipefail
+zig build install
+mkdir -p "$HOME/bin"
+cp "zig-out/bin/flow" "$HOME/bin/flow-zig"
+chmod 755 "$HOME/bin/flow-zig"
+echo "Installed CLI to $HOME/bin/flow-zig"
+"""
+description = "Build the Flow Zig CLI binary and install it to ~/bin/flow-zig"
+shortcuts = ["D"]
